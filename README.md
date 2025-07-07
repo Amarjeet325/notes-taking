@@ -28,7 +28,7 @@ A full-stack OTP-based authentication system built using the **MERN** stack (Mon
 ---
 
 ## 📁 Folder Structure
-
+```
 otp-auth-app/
 │
 ├── client/ # React frontend
@@ -66,7 +66,7 @@ otp-auth-app/
 │ └── package.json
 │
 └── README.md
-
+```
 yaml
 Copy
 Edit
@@ -78,41 +78,53 @@ Edit
 Create a `.env` file in the `server/` directory:
 
 ```env
+
+
 PORT=4000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_email_password_or_app_password
-🛠️ Setup Instructions
+
+```
+
+ ## 🛠️ Setup Instructions
+
 1. Clone the Repo
-bash
+```bash
 Copy
 Edit
 git clone https://github.com/your-username/otp-auth-app.git
 cd otp-auth-app
+```
+
 2. Install Backend Dependencies
-bash
+``` bash
 Copy
 Edit
 cd server
 npm install
+```
 3. Start Backend Server
-bash
+```bash
 Copy
 Edit
 nodemon server.js
+```
 # or
 npm start
 4. Install Frontend Dependencies
-bash
+```bash
 Copy
 Edit
 cd ../client
 npm install
+```
 5. Start React App
-bash
+```bash
 Copy
 Edit
 npm run dev
 # OR if using CRA:
 npm start
+```
