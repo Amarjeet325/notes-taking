@@ -1,0 +1,144 @@
+/* Base layout */
+.auth-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Left side - Form */
+.form-section {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.dob-wrapper {
+  position: relative;
+}
+
+.dob-wrapper .icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.dob-wrapper .dob {
+  padding-left: 36px;
+}
+
+.btn {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.switch-text {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+/* Right side - Image */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .auth-wrapper {
+    flex-direction: column;
+  }
+
+  .image-section {
+    display: none;
+  }
+
+  .form-section {
+    padding: 20px;
+    height: 100vh;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .input,
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .dob-wrapper .dob {
+    padding-left: 32px;
+  }
+}
