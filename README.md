@@ -1,4 +1,4 @@
-# 🔐 MERN OTP Authentication App
+#  OTP Authentication App
 
 A full-stack OTP-based authentication system built using the **MERN** stack (MongoDB, Express, React, Node.js). Users can sign up with their name, DOB, and email, receive an OTP, verify it, and access a protected dashboard.
 
@@ -14,6 +14,7 @@ A full-stack OTP-based authentication system built using the **MERN** stack (Mon
 - 📧 Nodemailer for email delivery
 
 ---
+
 
 ## 🧩 Tech Stack
 
