@@ -118,7 +118,7 @@ npm start
 ```bash
 Copy
 Edit
-cd ../client
+cd ../frontend
 npm install
 ```
 5. Start React App
